@@ -534,7 +534,7 @@ cc_library(
     deps = [
         ":detections_to_render_data_calculator_cc_proto",
         "//mediapipe/framework:calculator_framework",
-        "//mediapipe/framework:calculator_options_cc_proto",
+        "//mediapipe/framework:calculator_options_cc_proto", 
         "//mediapipe/framework/formats:detection_cc_proto",
         "//mediapipe/framework/formats:location_data_cc_proto",
         "//mediapipe/framework/port:ret_check",
@@ -542,6 +542,7 @@ cc_library(
         "//mediapipe/util:render_data_cc_proto",
         "@com_google_absl//absl/memory",
         "@com_google_absl//absl/strings",
+	"//mediapipe/midi:DetectionToMidi",
     ],
     alwayslink = 1,
 )

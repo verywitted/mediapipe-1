@@ -23,6 +23,8 @@
 #include "mediapipe/framework/port/ret_check.h"
 #include "mediapipe/util/color.pb.h"
 #include "mediapipe/util/render_data.pb.h"
+#include "mediapipe/midi/DetectionToMidi.h" 
+
 namespace mediapipe {
 
 namespace {
@@ -331,6 +333,7 @@ void DetectionsToRenderDataCalculator::AddLocationData(
             detection.location_data().relative_keypoints(i).x());
         keypoint_data->set_y(
             detection.location_data().relative_keypoints(i).y());
+	   DetectionToMidi(keypoint_data->x(), keypoint_data->y());
       }
     }
   }
