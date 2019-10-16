@@ -1,0 +1,4 @@
+--input_jar
+bazel-out/arm64-v8a-opt/bin/mediapipe/examples/android/src/java/com/google/mediapipe/apps/handtrackinggpu/handtrackinggpu_resources.jar_desugared.jar
+--output_zip
+bazel-out/arm64-v8a-opt/bin/mediapipe/examples/android/src/java/com/google/mediapipe/apps/handtrackinggpu/handtrackinggpu_resources.jar.dex.zip
