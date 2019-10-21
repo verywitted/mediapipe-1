@@ -246,12 +246,13 @@ maven_jar(
 # You may run setup_android.sh to install Android SDK and NDK.
 android_ndk_repository(
     name = "androidndk",
-    path = "/root/Android/Sdk/ndk-bundle/android-ndk-r18b",
+    path = "home/ubuntu/Android/Sdk/ndk/android-ndk-r18b",
+    api_level = 29,
 )
 
 android_sdk_repository(
     name = "androidsdk",
-    path = "/root/Android/Sdk",
+    path = "/home/ubuntu/Android/Sdk",
 )
 
 # iOS basic build deps.
